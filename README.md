@@ -32,7 +32,7 @@ The UI in this project uses a custom font added to increase font size substantia
 *///Custom Fonts stored in src/display
 //LV_FONT_DECLARE(tempfont200);
 //#define font200 &tempfont200*
-replace tempfont200 with the name of your custom font (tip: When using the font converter I went with 1 bit per pixel and include symbols: -.0123456789°FC )
+replace tempfont200 with the name of your custom font (tip: When using the font converter I went with 1 bit per pixel, 200px, and include symbols: -.0123456789°FC )
 
 
 //**Setup Notes**//
