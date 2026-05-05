@@ -1,4 +1,3 @@
-///as of 4-24-26 10:01am this file should be complete
 
 #include "Display_ST7701.h"  
       
