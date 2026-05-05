@@ -8,8 +8,9 @@ This board does not support LCD rotation using ST7701. Created in Arduino IDE
 **Aside from the "lv_conf.h" file and the "tempfont200.c" file all provided files will go in sketch folder alongside the TempSensor.ino file.**
 
 //**Code Compatability**// 
-(SKU: 30241	ESP32-S3-LCD-2.8B) on waveshare site you can download additional demo files/drivers to add touch function, SD card, button functions here: https://docs.waveshare.com/ESP32-S3-LCD-2.8B . These files will be very tailored to LVGL 8 UI creation. ***The demo code/files for display drivers and LVGL display from Waveshare will not work with the code provided in this project.***
-I gutted and modified the original provided demo code to upgrade from LVGL 8 to LVGL 9. My motivation for upgrading to LVGL 9 was to get larger font sizes and other functionality down the road. I could not get larger fonts to work in LVGL 8 with the online font converter tool. https://lvgl.io/tools/fontconverter
+(SKU: 30241	ESP32-S3-LCD-2.8B) on waveshare site you can download additional demo files/drivers to add touch function, SD card, button functions here: https://docs.waveshare.com/ESP32-S3-LCD-2.8B . Copy over the folders /lvgl/demos and /lvgl/examples into /src to use the widgets and other LVGL creations. These files will be very tailored to LVGL 8 UI creation. 
+***The demo code/files for display drivers and LVGL display from Waveshare will not work with the code provided in this project.***
+I gutted and modified the original provided demo code to upgrade from LVGL 8 to LVGL 9. My motivation for upgrading to LVGL 9 was to get larger font sizes and other functionality down the road. I could not get larger fonts to work in LVGL 8 with the online font converter tool. https://lvgl.io/tools/fontconverter . There are no demo or example files referenced in this project and these folders are not needed to create the display and temp readout. 
 
 This build is working with LVGL 9.5
 
