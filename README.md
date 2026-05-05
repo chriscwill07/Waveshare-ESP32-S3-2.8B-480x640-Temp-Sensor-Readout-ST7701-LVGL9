@@ -1,7 +1,7 @@
 # waveshare-ESP32-S3-2.8B-480x640-notouchTempSensorReadout-ST7701-LVGL9
 Waveshare ESP32-S3 2.8B 480x640 using Display Driver ST7701 and LVGL9.5. Using Temp Sensor: DS18B20 sensor with 4.7k resistor added between IO pins.  
 Simple coolant temp readout with no touch functions. Temp readout logic includes color changes to orange at 200°F and red at 210°F. 
-This board does not support LCD rotation using ST7701. Created in Arduino IDE 
+This board does not support LCD rotation using ST7701. Created in Arduino IDE. I have no experience with ESP-IDF but I would assume this project would work just the same. 
 
 **The main .ino file and provided drivers are a good base to start a simple display in LVGL 9 using a ST7701 driver LCD.**
 
