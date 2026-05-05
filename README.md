@@ -8,8 +8,8 @@ This board does not support LCD rotation using ST7701.
 //**Code Compatability**// 
 When purchasing this board (SKU: 30241	ESP32-S3-LCD-2.8B) from waveshare you can download additional demo files/drivers to add touch function, SD card, button functions here: https://docs.waveshare.com/ESP32-S3-LCD-2.8B . These files will be tailored to LVGL 8 UI creation. ***The demo code/files for display drivers and LVGL display from Waveshare will not work with the code provided in this project.***
 I gutted and modified the original provided demo code to upgrade from LVGL 8 to LVGL 9. 
-This build is working with LVGL 9.5 
-The UI in this project uses a custom font added to increase font size substantially. (LVGL only provides up to 48px which struggles to fill a higher resolution screen)
+This build is working with LVGL 9.5
+
 
 //**Board Notes**//
 This ESP32-S3-LCD 2.B 480x640 will not rotate the display to landscape mode with hardware. I was not able to rotate the display with LVGL either in software.
@@ -25,10 +25,12 @@ Power by main USB-C port, or with 5 Volt power wired into "VCC and Ground" or "B
 //**UI Notes**// 
 This code shows as portrait mode and has a coolant temp readout, a engine temp icon, and a Landcruiser icon up top (I designed this for my old Landcruiser). Replace the Landcruiser icon with another 480x wide icon generated with the Onlinge LVGL image converter tool.  
 LVGL initializes the images separate from your standard create_UI. 
-**You must save these images in lvgl/src/display/**
+The UI in this project uses a custom font added to increase font size substantially. (LVGL only provides up to 48px which struggles to fill a higher resolution screen)
+**You must save the provided tempfont200.c file in lvgl/src/display/**
 
 //**Setup Notes**//
 *When configuring LVGL 9 dont put your conf.h file next to the main lvgl library folder. Put your conf.h file in /lvgl/src/. The #define LV_CONF_INCLUDE_SIMPLE included in the .ino will find it. 
+*You will need OneWire and DallasTemperature libraries in addition to the LVGL 9 files. 
 *Remember to open your conf.h file and enable display. 
 
 
