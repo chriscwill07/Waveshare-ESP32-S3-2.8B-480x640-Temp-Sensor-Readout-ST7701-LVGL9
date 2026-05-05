@@ -8,7 +8,7 @@ This board does not support LCD rotation using ST7701. Created in Arduino IDE
 **Aside from the "lv_conf.h" file and the "tempfont200.c" file all provided files will go in sketch folder alongside the TempSensor.ino file.**
 
 //**Code Compatability**// 
-When purchasing this board (SKU: 30241	ESP32-S3-LCD-2.8B) from waveshare you can download additional demo files/drivers to add touch function, SD card, button functions here: https://docs.waveshare.com/ESP32-S3-LCD-2.8B . These files will be very tailored to LVGL 8 UI creation. ***The demo code/files for display drivers and LVGL display from Waveshare will not work with the code provided in this project.***
+(SKU: 30241	ESP32-S3-LCD-2.8B) on waveshare site you can download additional demo files/drivers to add touch function, SD card, button functions here: https://docs.waveshare.com/ESP32-S3-LCD-2.8B . These files will be very tailored to LVGL 8 UI creation. ***The demo code/files for display drivers and LVGL display from Waveshare will not work with the code provided in this project.***
 I gutted and modified the original provided demo code to upgrade from LVGL 8 to LVGL 9. My motivation for upgrading to LVGL 9 was to get larger font sizes and other functionality down the road. I could not get larger fonts to work in LVGL 8 with the online font converter tool. https://lvgl.io/tools/fontconverter
 
 This build is working with LVGL 9.5
@@ -39,6 +39,7 @@ replace tempfont200 with the name of your custom font (tip: When using the font 
 *You will need OneWire and DallasTemperature libraries downloaded in addition to the LVGL 9 library. 
 *Remember to open your lv_conf.h file and ensure you enable display at the top. 
 *Ensure in you lv_conf.h file you have &lv_font_montserrat_48 enabled. Change "0" to "1". 
+**You will also need to download the .exe file from https://www.waveshare.com/wiki/Esp32-XIP-3.1.1_Development_Board_Installation to connect the board to Arduino IDE**
 
 
 
