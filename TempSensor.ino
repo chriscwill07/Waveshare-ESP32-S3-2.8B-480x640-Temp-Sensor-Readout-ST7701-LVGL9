@@ -1,4 +1,3 @@
-//4-27-26 10:55pm Need to remove white border around main container 
 
 #define LV_CONF_INCLUDE_SIMPLE
 #include <Arduino.h>
@@ -104,10 +103,7 @@ static void show_disconnected()
 
 }
 
-//*******************BUZZER for temp over 210°F******************************//
-
-
-
+/*****************LVGL Temp Update**********/
 // LVGL timer callback: read sensor, update UI
 static void update_temperature_timer(lv_timer_t *timer)
 {
@@ -204,7 +200,6 @@ void create_image() {
 
 // ---------------------- Arduino setup / loop ----------------------
 
-
 void setup() { 
 
   // Init color constants using helper that works across LVGL versions
@@ -222,8 +217,7 @@ void setup() {
 
   Serial.begin(115200);
 
-
-  // Create the temperature UI (assumes LVGL is initialized)
+  // Create the temperature UI and images (assumes LVGL is initialized)
   ui_create();
   create_image();
 
@@ -231,7 +225,6 @@ void setup() {
   lv_timer_create(update_temperature_timer, 1000, NULL);
   
 }
-
 
 
 void loop() 
