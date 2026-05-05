@@ -5,7 +5,7 @@ This board does not support LCD rotation using ST7701. Created in Arduino IDE. I
 
 **The main .ino file and provided drivers are a good base to start a simple display in LVGL 9 using a ST7701 driver LCD.**
 
-**Aside from the "lv_conf.h" file and the "tempfont200.c" file all provided files will go in sketch folder alongside the TempSensor.ino file.**
+**Aside from the "lv_conf.h" file and the "tempfont200.c" file, all provided files will go in sketch folder alongside the TempSensor.ino file.**
 
 //**Code Compatability**// 
 (SKU: 30241	ESP32-S3-LCD-2.8B) on waveshare site you can download additional demo files/drivers to add touch function, SD card, button functions here: https://docs.waveshare.com/ESP32-S3-LCD-2.8B . Copy over the folders /lvgl/demos and /lvgl/examples into /src to use the widgets and other LVGL creations. These files will be very tailored to LVGL 8 UI creation. 
