@@ -14,7 +14,7 @@ This build is working with LVGL 9.5
 
 //**Board Notes**//
 This ESP32-S3-LCD 2.B 480x640 will not rotate the display to landscape mode with hardware. I was not able to rotate the display with LVGL either in software.
-You could use this code as a base to upgrade another ST7701 driver board to LVGL 9. You would need to modify your current "Display_ST7701.h" and "Display_ST7701.cpp" files. 
+You could use this code as a base to upgrade another ST7701 driver type display/devboard to LVGL 9. You would need to modify your current "Display_ST7701.h" and "Display_ST7701.cpp" files. 
 Aside from little to no support from Waveshare, the display looks great and the board has great IO connectivity. 
 
 //**Physical Board Wiring**// 
