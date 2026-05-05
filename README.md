@@ -10,6 +10,7 @@ This board does not support LCD rotation using ST7701. Created in Arduino IDE
 //**Code Compatability**// 
 When purchasing this board (SKU: 30241	ESP32-S3-LCD-2.8B) from waveshare you can download additional demo files/drivers to add touch function, SD card, button functions here: https://docs.waveshare.com/ESP32-S3-LCD-2.8B . These files will be very tailored to LVGL 8 UI creation. ***The demo code/files for display drivers and LVGL display from Waveshare will not work with the code provided in this project.***
 I gutted and modified the original provided demo code to upgrade from LVGL 8 to LVGL 9. My motivation for upgrading to LVGL 9 was to get larger font sizes and other functionality down the road. I could not get larger fonts to work in LVGL 8 with the online font converter tool. https://lvgl.io/tools/fontconverter
+
 This build is working with LVGL 9.5
 
 //**Board Notes**//
