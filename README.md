@@ -25,7 +25,7 @@ Plug the DS18B20 sensor into G, 3V3, and 16. 4.7k resistor across 3V3 and pin 16
 Power by main USB-C port, or with 5 Volt power wired into "VCC and Ground" or "BAT and Ground" which has built in power regulation. Be careful with putting power into pins. You can fry your board quickly if using the wrong one. 
 
 //**UI Notes**// 
-This code shows as portrait mode and has a coolant temp readout, a engine temp icon, and a Landcruiser icon up top (I designed this for my old FJ60 Landcruiser). Replace the Landcruiser icon with another 480x wide icon generated with the Online LVGL image converter tool. https://lvgl.io/tools/imageconverter  
+This code shows as portrait mode and has a coolant temp readout, a engine temp icon, and a Landcruiser icon up top (I designed this for my old FJ60 Landcruiser). You change the logo of the Landcruiser icon with another 480x wide icon generated with the Online LVGL image converter tool. https://lvgl.io/tools/imageconverter  
 LVGL initializes the images separate from your standard create_UI. 
 The UI in this project uses a custom font added to increase font size substantially. (LVGL only provides up to 48px which struggles to fill a higher resolution screen)
 **You must save the provided tempfont200.c file in lvgl/src/display/** or replace with another font and adjust the font declare code in the .ino 
