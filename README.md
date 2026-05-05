@@ -3,7 +3,8 @@ Waveshare ESP32-S3 2.8B 480x640 using Display Driver ST7701 and LVGL9.5. Using T
 Simple coolant temp readout with no touch functions. Temp readout logic includes color changes to orange at 200°F and red at 210°F. 
 This board does not support LCD rotation using ST7701.
 
-**The main .ino file and provided drivers are a good base to start a simple display in LVGL 9 using a ST7701 driver LCD**
+**The main .ino file and provided drivers are a good base to start a simple display in LVGL 9 using a ST7701 driver LCD.**
+
 **Aside from the "lv_conf.h" file and the "tempfont200.c" file all provided files will go in sketch folder alongside the TempSensor.ino file.**
 
 //**Code Compatability**// 
