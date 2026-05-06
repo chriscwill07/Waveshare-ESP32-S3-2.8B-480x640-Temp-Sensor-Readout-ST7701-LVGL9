@@ -3,10 +3,11 @@
 Waveshare ESP32-S3 2.8B 480x640 using Display Driver ST7701, RGB565, and LVGL9.5. Using Temp Sensor: DS18B20 sensor with 4.7k resistor added between IO pins.  
 Simple automotive coolant temp readout with no touch functions. Temp readout logic includes color changes to orange at 200°F and red at 210°F. 
 This board does not support LCD rotation using ST7701. Created in Arduino IDE. I have no experience with ESP-IDF but I would assume this project would work just the same. 
+I designed an enclosure in SolidWorks and had it 3D printed by an online service. 
 
 <p align="center">
   <figure style="display:inline-block; margin: 10px;">
-    <img src="https://github.com/user-attachments/assets/1e1444d4-74d9-4a3e-af51-f0fa038cd475" alt="Waveshare ESP32-S3 ST7701 display showing temperature readout in portrait mode" width="300">
+    <img src="https://github.com/user-attachments/assets/1e1444d4-74d9-4a3e-af51-f0fa038cd475" alt="3D Printed Enclosure with ESP32-S3 Board" width="300">
   </figure>
   <figure style="display:inline-block; margin: 10px;">
     <img src="https://github.com/user-attachments/assets/f71038a6-0b59-4ea0-9289-62f2fa118b76" alt="Landcruiser icon and engine temperature icon rendered with LVGL9" width="300">
