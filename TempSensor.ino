@@ -141,7 +141,7 @@ lv_obj_set_style_border_opa(main_cont, LV_OPA_COVER, 0);
 
 
     // Create temp readout label as child of main_cont
-    label_temp = lv_label_create(main_cont);  // Use the global/static label_temp
+    label_temp = lv_label_create(main_cont);  //
     lv_label_set_text(label_temp, "--.-");
     lv_obj_set_style_text_font(label_temp, font200, 0);
     lv_obj_set_style_text_align(label_temp, LV_TEXT_ALIGN_CENTER, 0);
@@ -150,9 +150,9 @@ lv_obj_set_style_border_opa(main_cont, LV_OPA_COVER, 0);
 /**
     // Create engine temp label 
      label_gauge = lv_label_create(main_cont);
-     lv_obj_set_width(label_gauge, 640);  // assuming this was meant to be label_gauge
+     lv_obj_set_width(label_gauge, 640); 
      lv_obj_set_style_text_font(label_gauge, &lv_font_montserrat_48, 0);
-     lv_obj_set_style_text_color(label_gauge, lv_color_white(), 0);  // 👈 Add this line
+     lv_obj_set_style_text_color(label_gauge, lv_color_white(), 0);  //
      lv_obj_set_style_text_align(label_gauge, LV_TEXT_ALIGN_CENTER, 0);
      lv_label_set_text(label_gauge, "Engine Temp");
      lv_obj_align(label_gauge, LV_ALIGN_CENTER, 0, 120);
