@@ -114,7 +114,7 @@ static void update_temperature_timer(lv_timer_t *timer)
     return;
   }
 
-  float tempF = tempC * 9.0f / 5.0f + 32.0f;
+  float tempF = tempC * 9.0f / 5.0f + 32.0f; //for temp offset one point cal add + (yourdegreesofoffset)f to 32.of 
   char buf[32];
   snprintf(buf, sizeof(buf), "%.1f", tempF);
 
@@ -208,8 +208,8 @@ void setup() {
 
   // Initialize drivers and display
   Driver_Init();
-  LCD_Init();    // initialize display (as in your original)
-  initLVGL();   // initialize LVGL (and register display driver)
+  LCD_Init();    // initialize display 
+  initLVGL();   // initialize LVGL 
 
   // Start DS18B20
   sensors.begin();
